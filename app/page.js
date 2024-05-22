@@ -188,8 +188,8 @@ export default function Home() {
               </div>
               <div className="flex-1">
                 <h5 className="title mb-10 anime-bounce">
-                  <span className="text-white">Let's </span>
-                  Connect !
+                  <span className="text-white">{"Let's "}</span>
+                  {" Connect !"}
                 </h5>
                 <ContactFrom />
               </div>
