@@ -14,7 +14,7 @@
     @apply text-4xl md:text-5xl font-bold;
   }
   .input-style {
-    @apply p-3 mb-3 w-full text-base bg-white/20 border border-black/20 rounded-lg focus-visible:outline-none focus-visible:outline-primary  text-black placeholder:text-black/80;
+    @apply p-3  w-full text-base bg-white/20 border border-black/20 rounded-lg focus-visible:outline-none focus-visible:outline-primary  text-black placeholder:text-black/80;
   }
 }
 
@@ -34,6 +34,7 @@
 
 body {
   /* font-family: "Inter"; */
+  scroll-behavior: smooth;
 }
 
 main {

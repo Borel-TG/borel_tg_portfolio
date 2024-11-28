@@ -32,7 +32,7 @@ function Navbar() {
   }, []);
 
   const stickMe = () => {
-    return null;
+    // return null;
     let navbar = document.getElementById("nav-wrapper");
     let offset = navbar.offsetTop;
     if (window.scrollY >= offset) {

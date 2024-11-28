@@ -2,23 +2,40 @@
 import React from "react";
 import Button from "../Button/Button";
 
-function ContactFrom() {
-  const [errors, setErrors] = React.useState([]);
+function ContactForm() {
+  const [errors, setErrors] = React.useState({});
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const form = new FormData(e.target);
+    const name = form.get("name");
+    // const email = form.get("email");
+    const email = "tchassemborel@gmail.com";
+    const message = form.get("message");
 
-    if (form.get("name") && form.get("email") && form.get("message")) {
-      setErrors([]);
+    const newErrors = {};
+
+    // Validation
+    if (!name) newErrors.name = "Please fill in your name";
+    // if (!email) newErrors.email = "Please fill in your email";
+    if (!message) newErrors.message = "Please fill in your message";
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
     } else {
-      let err = [];
-      if (!form.get("name")) err.push("name");
-      if (!form.get("email")) err.push("email");
-      if (!form.get("message")) err.push("message");
-      setErrors([...errors, ...err]);
-      console.log("errors");
+      setErrors({});
+      console.log("Form submitted successfully!");
+
+      // Create the mailto link
+      const subject = encodeURIComponent(`Message from ${name}`);
+      const body = encodeURIComponent(
+        `${message}\n\nFrom: ${name}\nEmail: ${email}`
+      );
+      const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+
+      // Open the user's email client with the pre-filled information
+      window.location.href = mailtoLink;
     }
   };
 
@@ -29,34 +46,35 @@ function ContactFrom() {
       className="flex flex-col"
       onSubmit={handleSubmit}
     >
-      <div className="flex flex-col md:flex-row">
-        <div>
+      <div className="flex flex-col md:flex-row mb-3">
+        {/* <div className={"ms-0 md:me-3"}>
           <input
-            className="input-style"
+            className={`input-style ${errors.email ? "border-red-900" : ""}`}
             name="email"
             type="email"
-            autoComplete="false"
+            autoComplete="off"
             placeholder="your@email.com"
+            aria-describedby="emailError"
           />
-          {errors.find((x) => x == "email") && (
-            <span className="text-sm relative -top-4 text-red-900">
-              Please fill in your email
+          {errors.email && (
+            <span id="emailError" className="text-sm text-red-900 mt-1">
+              {errors.email}
             </span>
           )}
-          {console.log("er::::", errors["name"])}
-        </div>
+        </div> */}
 
         <div>
           <input
-            className="input-style ms-0 md:ms-3"
+            className={`input-style  ${errors.name ? "border-red-900" : ""}`}
             name="name"
             type="text"
-            autoComplete="false"
+            autoComplete="off"
             placeholder="Your Name"
+            aria-describedby="nameError"
           />
-          {errors.find((x) => x == "name") && (
-            <span className="text-sm relative -top-4 text-red-900">
-              Please fill in your name
+          {errors.name && (
+            <span id="nameError" className="text-sm text-red-900 mt-1">
+              {errors.name}
             </span>
           )}
         </div>
@@ -64,28 +82,27 @@ function ContactFrom() {
 
       <div>
         <textarea
-          className="input-style "
+          className={`input-style ${errors.message ? "border-red-900" : ""}`}
           name="message"
-          autoComplete="false"
+          autoComplete="off"
           placeholder="Your message ..."
+          aria-describedby="messageError"
         />
-        {errors.find((x) => x == "message") && (
-          <span className="text-sm relative -top-5 text-red-900">
-            Please fill in your message
+        {errors.message && (
+          <span id="messageError" className="text-sm text-red-900 mt-1">
+            {errors.message}
           </span>
         )}
       </div>
 
       <Button
-        className="w-fit "
+        className="w-fit"
         label="Send Message"
         type="submit"
         cssClass="mt-5 border border-black/10 w-fit"
       />
     </form>
   );
-
-  // );
 }
 
-export default ContactFrom;
+export default ContactForm;

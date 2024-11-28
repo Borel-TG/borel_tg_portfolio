@@ -41,6 +41,7 @@ function ProjectCard({
         <div className="absolute flex transition-all duration-500 ease-in-out content-center bottom-0 md:-bottom-14 md:group-hover:-bottom-0">
           <Link
             href={projectUrl}
+            target="_blank"
             className="p-2 rounded-xl text-[#f1f1f1] bg-black transition-colors ease-in-out shadow-md"
           >
             Open Live project

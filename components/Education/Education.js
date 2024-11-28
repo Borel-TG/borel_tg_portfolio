@@ -6,7 +6,7 @@ function Eduction() {
     <div className="w-full">
       <EducationItem
         date={"August 2022 - August 224"}
-        role={"Master's in Technological Innovation"}
+        role={"Master's in Computer Science"}
         company={"University of Innopolis"}
         companyUrl={"https://innopolis.university/en/"}
         address={"Innopolis - Russia"}
@@ -43,6 +43,7 @@ function EducationItem({ role, date, company, companyUrl, address }) {
         <Link
           className="text-md ms-2 mb-2 underline transition-colors ease-in-out  "
           href={companyUrl}
+          target="_blank"
         >
           {company}
         </Link>

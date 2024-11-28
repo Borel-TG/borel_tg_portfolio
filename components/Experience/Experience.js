@@ -5,7 +5,14 @@ function Experience() {
   return (
     <div className="w-full">
       <ExperienceItem
-        date={"August 2023 - Present"}
+        date={"April 2024 - Present"}
+        role={"Lead React/Fullstack Developer"}
+        company={"Afiwa Exchange"}
+        companyUrl={"https://afiwaexchange.com"}
+        address={"Remote - Russia"}
+      />
+      <ExperienceItem
+        date={"August 2023 - January 2023"}
         role={"Frontend Developer"}
         company={"8-Billion-minds"}
         companyUrl={"https://8billionminds"}
@@ -14,14 +21,14 @@ function Experience() {
       <ExperienceItem
         date={"January 2021 - July 2022"}
         role={"Lead Frontend Developer"}
-        company={"Loosto.com"}
+        company={"Loosto LTD"}
         companyUrl={"https://loosto.com"}
         address={"Douala - Cameroon"}
       />
       <ExperienceItem
         date={"April 2018 - December 2021"}
         role={"Full Stack Developer"}
-        company={"Loosto.com"}
+        company={"Loosto LTD"}
         companyUrl={"https://loosto.com"}
         address={"Douala - Cameroon"}
       />
@@ -49,6 +56,7 @@ function ExperienceItem({ role, date, company, companyUrl, address }) {
         At
         <Link
           className="text-md ms-2 mb-2 underline transition-colors ease-in-out  "
+          target="_blank"
           href={companyUrl}
         >
           {company}

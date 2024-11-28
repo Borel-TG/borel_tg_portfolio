@@ -1,21 +1,29 @@
-import { Inter, Merienda } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Head from "next/head";
 import ContainedBlock from "@/components/ContainedBlock/ContainedBlock";
-
 const inter = Inter({ subsets: ["latin"] });
-const merianda = Merienda({ subsets: ["latin"], weight: "500" });
 
+// metadata
 export const metadata = {
+  metadataBase: "new URL(baseUrl)",
   title: "Borel T.G",
-  description: "I am Borel T.G, Software developer, Entrepreneur and Artist.",
+  description:
+    "Get your project started ! - I will develop high-performance web/mobile applications for you",
+  twitter: {
+    card: "summary_large_image",
+  },
   charSet: "UTF-8",
+  // favicon metadata
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
-  // bg-[#0a090d] text-white
   return (
     <html lang="en">
       <Head>

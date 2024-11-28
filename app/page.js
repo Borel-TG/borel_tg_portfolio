@@ -9,10 +9,11 @@ import ReferenceCard from "@/components/ReferenceCard/ReferenceCard";
 import { myProjects } from "@/data";
 import ContactFrom from "@/components/ContactForm/ContactFrom";
 import Point from "@/components/Point/Point";
+import ScrollToTop from "@/components/scrollTop";
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative z-0 scroll-smooth">
       {/* Header */}
       <header className="bg-header">
         <ContainedBlock className="flex flex-col md:flex-row gap-5 py-16 md:py-20">
@@ -197,6 +198,8 @@ export default function Home() {
           </div>
         </ContainedBlock>
       </section>
+      {/* sroll-to-top */}
+      <ScrollToTop />
     </main>
   );
 }
