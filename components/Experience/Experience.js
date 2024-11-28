@@ -15,7 +15,7 @@ function Experience() {
         date={"August 2023 - January 2023"}
         role={"Frontend Developer"}
         company={"8-Billion-minds"}
-        companyUrl={"https://8billionminds"}
+        companyUrl={"https://www.8billionminds.com/home"}
         address={"Remote - United Kingdom"}
       />
       <ExperienceItem

@@ -13,7 +13,7 @@ export const myProjects = [
 
   {
     name: "8 Billion minds",
-    url: "https://8billionminds",
+    url: "https://www.8billionminds.com/home",
 
     image: "/8bm.png",
     role: "Frontend Developer",
@@ -22,18 +22,6 @@ export const myProjects = [
     sumarry:
       "Free peer-to-peer e-learning platform.Live video call with teaching board",
     technologies: ["/reactjs.png", "/javascript.png", "/java.png"],
-  },
-  {
-    name: "Komek.pro",
-    url: "https://komek.pro",
-    type: "Services listing",
-    industry: "Market place",
-    image: "/idealm.png",
-    role: "Product owner and developer",
-    type: "Freelancer",
-    sumarry:
-      "E-learning platform. Students can buy video courses and book mentorship sessions.",
-    technologies: ["/wordpress.png", "/php.png", "/javascript.png"],
   },
 
   {
@@ -70,6 +58,19 @@ export const myProjects = [
       "/node-js.png",
     ],
   },
+
+  {
+    name: "Vita",
+    url: "https://vita-express.onrender.com/docs/",
+    type: "Mobile application",
+    industry: "Health Industry",
+    image: "/idealm.png",
+    role: "Fullstack Developer",
+    type: "Freelancer",
+    sumarry:
+      "Infant immnunisation tracking system with automated SMS notifications.",
+    technologies: ["/reactjs.png", "/node-js.png"],
+  },
   {
     name: "Komek.pro",
     url: "https://komek.pro",
@@ -81,17 +82,5 @@ export const myProjects = [
     sumarry:
       "E-learning platform. Students can buy video courses and book mentorship sessions.",
     technologies: ["/wordpress.png", "/php.png", "/javascript.png"],
-  },
-  {
-    name: "Vita",
-    url: "https://vita.com",
-    type: "Mobile application",
-    industry: "Health Industry",
-    image: "/idealm.png",
-    role: "Fullstack Developer",
-    type: "Freelancer",
-    sumarry:
-      "Infant immnunisation tracking system with automated SMS notifications.",
-    technologies: ["/reactjs.png", "/node-js.png"],
   },
 ];
