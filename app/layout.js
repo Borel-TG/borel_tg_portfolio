@@ -25,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" prefix="og: http://ogp.me/ns#">
       <Head>
         <link rel="shortcut icon" href="favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
