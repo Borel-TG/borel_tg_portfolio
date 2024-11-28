@@ -32,14 +32,15 @@ function Navbar() {
   }, []);
 
   const stickMe = () => {
-    // return null;
-    let navbar = document.getElementById("nav-wrapper");
-    let offset = navbar.offsetTop;
-    if (window.scrollY >= offset) {
-      navbar.classList.add("sticky");
-    } else {
-      navbar.classList.remove("sticky");
-    }
+    return null;
+    // COMMENT : removed because it lags
+    // let navbar = document.getElementById("nav-wrapper");
+    // let offset = navbar.offsetTop;
+    // if (window.scrollY >= offset) {
+    //   navbar.classList.add("sticky");
+    // } else {
+    //   navbar.classList.remove("sticky");
+    // }
   };
 
   return (
