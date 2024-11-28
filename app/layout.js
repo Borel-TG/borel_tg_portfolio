@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 // metadata
 export const metadata = {
-  metadataBase: "new URL(baseUrl)",
+  metadataBase: "https://borel-tg-portfolio-964.vercel.app/",
   title: "Borel T.G",
   description:
     "Get your project started ! - I will develop high-performance web/mobile applications for you",
