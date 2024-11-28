@@ -9,9 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 // metadata
 export const metadata = {
   metadataBase: "https://borel-tg-portfolio-964.vercel.app/",
-  title: "Borel T.G",
+  title: "I'm Borel T.G 🙂",
   description:
-    "Get your project started ! - I will develop high-performance web/mobile applications for you",
+    "🚀 Let’s launch your project today! I’ll develop a high-performance web/mobile application tailored to your needs.",
   twitter: {
     card: "summary_large_image",
   },
