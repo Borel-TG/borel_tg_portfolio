@@ -25,6 +25,15 @@ const links = [
 
 function Navbar() {
   useEffect(() => {
+    try {
+      const tg = window.Telegram.WebApp;
+      tg.expand(); // Expands the app to full screen
+
+      console.log(tg.initDataUnsafe); // User info
+    } catch (error) {
+      console.log("failed to get TG user details");
+    }
+
     window.addEventListener("scroll", stickMe);
     return () => {
       window.removeEventListener("scroll", stickMe);

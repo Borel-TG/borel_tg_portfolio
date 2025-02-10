@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <meta charSet="UTF-8"></meta>
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
       </Head>
       <body className={`${inter.className}`}>
         {/* navbar */}
