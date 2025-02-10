@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Head from "next/head";
+import Script from "next/script";
 import ContainedBlock from "@/components/ContainedBlock/ContainedBlock";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,8 +32,11 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <meta charSet="UTF-8"></meta>
-        <script src="https://telegram.org/js/telegram-web-app.js"></script>
       </Head>
+      <Script
+        src="https://telegram.org/js/telegram-web-app.js"
+        strategy="beforeInteractive"
+      />
       <body className={`${inter.className}`}>
         {/* navbar */}
         <Navbar />
