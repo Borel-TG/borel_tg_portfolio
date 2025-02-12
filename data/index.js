@@ -8,13 +8,17 @@ export const myProjects = [
     image: "/8bm.png",
     sumarry:
       "Afiwa Exhange provides a seamless way for people to trade financial assets",
-    technologies: ["/nextjs.jpg", "/reactjs.png", "/typescript.png"],
+    technologies: [
+      "/nextjs.jpg",
+      "/reactjs.png",
+      "/typescript.png",
+      "/tailwind.png",
+    ],
   },
 
   {
     name: "8 Billion minds",
     url: "https://www.8billionminds.com/home",
-
     image: "/8bm.png",
     role: "Frontend Developer",
     type: "Volunteer contributor",
@@ -23,23 +27,16 @@ export const myProjects = [
       "Free peer-to-peer e-learning platform.Live video call with teaching board",
     technologies: ["/reactjs.png", "/javascript.png", "/java.png"],
   },
-
   {
-    name: "Loosto.com",
-    url: "https://loosto.com",
-    type: "Fulltime Employed",
-    industry: "E-Health",
-    image: "/loosto.png",
-    role: "Full Stack Developer",
-    type: "Fulltime Employed",
+    name: "Zalando Clone",
+    url: " https://zalando-ecommerce-page-gp6nemt0l-borels-projects-78352f44.vercel.app/products",
+    type: "Clone project",
+    industry: "E-commerce",
+    image: "/zalando.webp",
+    role: "Frontend Developers",
     sumarry:
-      "Loosto is an E-health physician booking web application. Present in 2 coutries with over 4k users.Loosto is an E-health physician booking web application. Present in 2 coutries with over 4k users.",
-    technologies: [
-      "/reactjs.png",
-      "/nextjs.jpg",
-      "/javascript.png",
-      "/java.png",
-    ],
+      "Next.Js+ Tailwind - Product page clone of the popular French ecommerce site Zalando.",
+    technologies: ["/nextjs.jpg", "/typescript.png", "/tailwind.png"],
   },
   {
     name: "Ideal mentor.com",
@@ -58,6 +55,16 @@ export const myProjects = [
       "/node-js.png",
     ],
   },
+  {
+    name: "Arina travels",
+    url: "https://travel-app-landing-page-next-js.vercel.app/",
+    industry: "Traveling",
+    image: "/idealm.png",
+    role: "Frontend Developer",
+    type: "Fun project",
+    sumarry: "Next.js + Tailwind - Traveling agency landing page .",
+    technologies: ["/nextjs.jpg", "/javascript.png", "/tailwind.png"],
+  },
 
   {
     name: "Vita",
@@ -71,16 +78,35 @@ export const myProjects = [
       "Infant immnunisation tracking system with automated SMS notifications.",
     technologies: ["/reactjs.png", "/node-js.png"],
   },
+
   {
-    name: "Komek.pro",
-    url: "https://komek.pro",
-    type: "Services listing",
-    industry: "Market place",
-    image: "/idealm.png",
-    role: "Product owner and developer",
-    type: "Freelancer",
+    name: "Loosto.com",
+    url: "https://loosto.com",
+    type: "Fulltime Employed",
+    industry: "Health Industry",
+    image: "/loosto.png",
+    role: "Full Stack Developer",
+    type: "Fulltime Employed",
     sumarry:
-      "E-learning platform. Students can buy video courses and book mentorship sessions.",
-    technologies: ["/wordpress.png", "/php.png", "/javascript.png"],
+      "Loosto is an E-health physician booking web application. Present in 2 coutries with over 4k users.Loosto is an E-health physician booking web application. Present in 2 coutries with over 4k users.",
+    technologies: [
+      "/reactjs.png",
+      "/nextjs.jpg",
+      "/javascript.png",
+      "/java.png",
+    ],
   },
+
+  // {
+  //   name: "Komek.pro",
+  //   url: "https://komek.pro",
+  //   type: "Services listing",
+  //   industry: "Market place",
+  //   image: "/idealm.png",
+  //   role: "Product owner and developer",
+  //   type: "Freelancer",
+  //   sumarry:
+  //     "E-learning platform. Students can buy video courses and book mentorship sessions.",
+  //   technologies: ["/wordpress.png", "/php.png", "/javascript.png"],
+  // },
 ];
