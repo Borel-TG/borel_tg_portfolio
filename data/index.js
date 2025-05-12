@@ -1,5 +1,16 @@
 export const myProjects = [
   {
+    name: "Gamler",
+    url: "https:/gamler.online/",
+    type: "Freelancer",
+    role: "Full-stack Developer",
+    industry: "Gaming Platform",
+    image: "/gamler-logo.png",
+    sumarry:
+      "A digital service for conducting psychological, business and educational games, gamification of learning",
+    technologies: ["/reactjs.png", "/typescript.png", "/nestjs.svg"],
+  },
+  {
     name: "Afiwa Exchange",
     url: "https://afiwaexchange.com",
     type: "Freelancer",
@@ -14,6 +25,17 @@ export const myProjects = [
       "/typescript.png",
       "/tailwind.png",
     ],
+  },
+  {
+    name: "Orina Bookings",
+    url: "https://www.orina.beauty/",
+    type: "Full Time",
+    role: "Product Owner",
+    industry: "SAAS for Beauty salons",
+    image: "/gamler-logo.png",
+    sumarry:
+      "Smart and simple way to book a beauty salon and manage beauty business. Whether you're a customer or a salon owner — Orina connects you in seconds.",
+    technologies: ["/vuejs.jpeg", "/typescript.png", "/nestjs.svg"],
   },
 
   {
@@ -33,7 +55,7 @@ export const myProjects = [
     type: "Clone project",
     industry: "E-commerce",
     image: "/zalando.webp",
-    role: "Frontend Developers",
+    role: "Frontend Developer",
     sumarry:
       "Next.Js+ Tailwind - Product page clone of the popular French ecommerce site Zalando.",
     technologies: ["/nextjs.jpg", "/typescript.png", "/tailwind.png"],
