@@ -1,7 +1,7 @@
 export const myProjects = [
   {
     name: "Gamler",
-    url: "https:/gamler.online/",
+    url: "https://gamler.online",
     type: "Freelancer",
     role: "Full-stack Developer",
     industry: "Gaming Platform",
