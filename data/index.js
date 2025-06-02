@@ -3,7 +3,8 @@ export const myProjects = [
     name: "Gamler",
     url: "https://gamler.online",
     type: "Freelancer",
-    role: "Full-stack Developer",
+    role: "Product Owner / Full-stack Developer",
+    //     role: "Senior Full-stack Developer",
     industry: "Gaming Platform",
     image: "/gamler-logo.png",
     sumarry:
@@ -14,7 +15,7 @@ export const myProjects = [
     name: "Afiwa Exchange",
     url: "https://afiwaexchange.com",
     type: "Freelancer",
-    role: "Full-stack Developer",
+    role: "Product Owner / Full-stack Developer",
     industry: "FinTech",
     image: "/8bm.png",
     sumarry:
@@ -50,6 +51,18 @@ export const myProjects = [
     technologies: ["/reactjs.png", "/javascript.png", "/java.png"],
   },
   {
+    name: "Vita",
+    url: "https://vita-express.onrender.com/docs/",
+    type: "Mobile application",
+    industry: "Health Industry",
+    image: "/idealm.png",
+    role: "Product Manager / Fullstack Developer",
+    type: "Co-Founder",
+    sumarry:
+      "Infant immnunisation tracking system with automated SMS notifications.",
+    technologies: ["/reactjs.png", "/node-js.png"],
+  },
+  {
     name: "Zalando Clone",
     url: " https://zalando-ecommerce-page-gp6nemt0l-borels-projects-78352f44.vercel.app/products",
     type: "Clone project",
@@ -66,8 +79,8 @@ export const myProjects = [
     type: "E-learning web app.",
     industry: "E-learning",
     image: "/idealm.png",
-    role: "Website designer",
-    type: "Freelancer",
+    role: "Product Manager",
+    type: "Co-Founder",
     sumarry:
       "E-learning platform. Students can buy video courses and book mentorship sessions.",
     technologies: [
@@ -86,19 +99,6 @@ export const myProjects = [
     type: "Fun project",
     sumarry: "Next.js + Tailwind - Traveling agency landing page .",
     technologies: ["/nextjs.jpg", "/javascript.png", "/tailwind.png"],
-  },
-
-  {
-    name: "Vita",
-    url: "https://vita-express.onrender.com/docs/",
-    type: "Mobile application",
-    industry: "Health Industry",
-    image: "/idealm.png",
-    role: "Fullstack Developer",
-    type: "Freelancer",
-    sumarry:
-      "Infant immnunisation tracking system with automated SMS notifications.",
-    technologies: ["/reactjs.png", "/node-js.png"],
   },
 
   {

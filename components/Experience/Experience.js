@@ -5,29 +5,31 @@ function Experience() {
   return (
     <div className="w-full">
       <ExperienceItem
-        date={"April 2024 - Present"}
-        role={"Lead React/Fullstack Developer"}
+        date={"February 2025 - Present"}
+        role={"Product Owner / Fullstack Developer"}
+        //   role={"Senior  Fullstack Developer"}
+        company={"Gamler"}
+        companyUrl={"https://gamler.online"}
+        address={"Remote - Russia"}
+      />
+      <ExperienceItem
+        date={"April 2024 - December 2025"}
+        role={"Product Owner / Fullstack Developer"}
+        // role={"Lead React/Fullstack Developer"}
         company={"Afiwa Exchange"}
         companyUrl={"https://afiwaexchange.com"}
         address={"Remote - Russia"}
       />
       <ExperienceItem
-        date={"August 2023 - January 2023"}
+        date={"August 2023 - January 2024"}
         role={"Frontend Developer"}
         company={"8-Billion-minds"}
         companyUrl={"https://www.8billionminds.com/home"}
         address={"Remote - United Kingdom"}
       />
       <ExperienceItem
-        date={"January 2021 - July 2022"}
-        role={"Lead Frontend Developer"}
-        company={"Loosto LTD"}
-        companyUrl={"https://loosto.com"}
-        address={"Douala - Cameroon"}
-      />
-      <ExperienceItem
-        date={"April 2018 - December 2021"}
-        role={"Full Stack Developer"}
+        date={"January 2018 - July 2022"}
+        role={"Lead Frontend Developer / Fullstack developer"}
         company={"Loosto LTD"}
         companyUrl={"https://loosto.com"}
         address={"Douala - Cameroon"}

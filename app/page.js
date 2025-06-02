@@ -30,10 +30,21 @@ export default function Home() {
             <h2 className="mt-5 text-2xl md:text-3xl text-capitalize font-bold font-merienda">
               I Develop Web Applications
             </h2>
-            <p className="mt-5 text-lg">
+            {/* <p className="mt-5 text-lg">
               I am a Full-stack JavaScript and React developer, passionate about
               developing robust web applications and developing user interfaces
               that can ensure a seamless user’s experience.
+            </p> */}
+            <p className="mt-5 text-lg">
+              <p className="mt-5 text-lg">
+                I’m a Product-Oriented Full-stack JavaScript Developer with a
+                passion for turning ideas into scalable web platforms. Whether
+                I’m writing clean, maintainable code or shaping product
+                strategy, I thrive at the intersection of user needs, technical
+                architecture, and business goals. I lead teams, gather
+                requirements, plan features, and build fast, reliable web apps
+                that people actually love to use.
+              </p>
             </p>
 
             <div className="flex gap-5 items-end mt-10">
